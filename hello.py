@@ -18,7 +18,9 @@ def main():
     print("Hello, World 18!")
     print("Hello, World 19!")
     print("Hello, World 20!")
-
+    print("Hello, World!")
+    print("Hello, World!")
+    print("Hello, World!")
 
 if __name__ == "__main__":
     main()
