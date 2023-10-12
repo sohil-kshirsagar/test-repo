@@ -20,7 +20,9 @@ def main():
     print("Hello, World 20!")
     print("Hello, World 21!")
     print("Hello, World 22!")
-
+    print("Hello, World 23!") # Added print statement after line 5 with next number
+    print("Hello, World 24!") # Added print statement after line 10 with next number
+    print("Hello, World 25!") # Added print statement after line 15 with next number
 
 if __name__ == "__main__":
     main()
