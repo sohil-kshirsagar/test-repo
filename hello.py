@@ -27,6 +27,9 @@ def main():
     print("Hello, World 27!")
     print("Hello, World 28!")
     print("Hello, World 29!")
+    print("Hello, World 30!")
+    print("Hello, World 31!")
+    print("Hello, World 32!")
 
 if __name__ == "__main__":
     main()
