@@ -8,4 +8,3 @@ try:
     print(test)
 except NameError as e:
     print(f"Caught an exception: {e}")
-
