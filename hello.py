@@ -35,6 +35,6 @@ def main():
     print("Hello from the extended universe!")
     print("Greetings, Earthlings!")
 
+
 if __name__ == "__main__":
     main()
-
