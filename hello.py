@@ -32,7 +32,9 @@ def main():
     print("Hello, World 32!")
     print("Hello, World 33!")
     print("Hello, World 34!")
-
+    print("Hello from the extended universe!")
+    print("Greetings, Earthlings!")
 
 if __name__ == "__main__":
     main()
+
