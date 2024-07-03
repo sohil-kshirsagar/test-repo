@@ -34,6 +34,8 @@ def main():
     print("Hello, World 34!")
     print("Hello, World 35!")
     print("Hello, World 36!")
+    print("Hello, World 37!")
+    print("Hello, World 38!")
 
 
 if __name__ == "__main__":
