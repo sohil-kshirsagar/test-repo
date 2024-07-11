@@ -34,8 +34,8 @@ def main():
     print("Hello, World 34!")
     print("Hello, World 35!")
     print("Hello, World 36!")
-    print('testing single string')
-    print( "testing spaces" )
+    print("testing single string")
+    print("testing spaces")
 
 
 if __name__ == "__main__":
