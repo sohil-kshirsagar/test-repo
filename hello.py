@@ -34,7 +34,7 @@ def main():
     print("Hello, World 34!")
     print("Hello, World 35!")
     print("Hello, World 36!")
-    print("testing single string")
+    print("testing string")
     print("testing spaces")
     print("simple")
 
