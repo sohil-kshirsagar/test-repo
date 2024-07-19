@@ -36,6 +36,7 @@ def main():
     print("Hello, World 36!")
     print("testing single string")
     print("testing spaces")
+    print("simple")
 
 
 if __name__ == "__main__":
