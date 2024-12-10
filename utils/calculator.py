@@ -2,6 +2,6 @@
 def add(a, b):
     return a + b
 
-# divid two numbers
+# divide two numbers
 def divide(a, b):
     return a / b
