@@ -1,7 +1,5 @@
 # test-repo
 
-some other changes
-
 Make env with `python -m venv myenv`
 
 Activate env with `source myenv/bin/activate`
