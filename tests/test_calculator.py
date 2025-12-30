@@ -1,5 +1,20 @@
 import pytest
-from utils.calculator import add
+from utils.calculator import add, subtract
 
 def test_add():
     assert add(1, 2) == 3
+
+def test_subtract():
+    assert subtract(5, 3) == 2
+
+def test_subtract_negative_result():
+    assert subtract(3, 5) == -2
+
+def test_subtract_with_negative_numbers():
+    assert subtract(-5, -3) == -2
+
+def test_subtract_zero():
+    assert subtract(10, 0) == 10
+
+def test_subtract_same_numbers():
+    assert subtract(7, 7) == 0
