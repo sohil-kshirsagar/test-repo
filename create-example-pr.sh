@@ -10,6 +10,7 @@ set -e
 
 # Default values
 INCLUDE_MODULES="string_utils"
+DISABLE_PR_CREATION=false
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -18,13 +19,19 @@ while [[ $# -gt 0 ]]; do
             INCLUDE_MODULES="${1#*=}"
             shift
             ;;
+        --disable-pr-creation)
+            DISABLE_PR_CREATION=true
+            shift
+            ;;
         --help)
-            echo "Usage: $0 [--include=module1,module2]"
+            echo "Usage: $0 [--include=module1,module2] [--disable-pr-creation]"
             echo ""
             echo "Options:"
             echo "  --include=MODULES  Comma-separated list of modules to include"
             echo "                     Available: string_utils, post_service"
             echo "                     Default: string_utils"
+            echo "  --disable-pr-creation  Disable PR creation"
+            echo "                         Default: false"
             echo ""
             echo "Example:"
             echo "  $0 --include=string_utils,post_service"
@@ -159,8 +166,9 @@ git commit -m "add utils"
 # Push to remote
 git push -u origin "$BRANCH_NAME"
 
-# Create PR non-interactively
-gh pr create --title "Add utils" --body "$(cat << 'EOF'
+if [[ "$DISABLE_PR_CREATION" == false ]]; then
+    # Create PR non-interactively
+    gh pr create --title "Add utils" --body "$(cat << 'EOF'
 ## Summary
 
 - Added utility modules to the codebase
@@ -172,12 +180,16 @@ gh pr create --title "Add utils" --body "$(cat << 'EOF'
 EOF
 )" --base main
 
-# Open PR in web browser
-gh pr view --web
+    # Open PR in web browser
+    gh pr view --web
 
-# Return to main branch
-git checkout main
+    # Return to main branch
+    git checkout main
 
-echo ""
-echo "PR created successfully!"
-echo "Branch: $BRANCH_NAME"
+    echo ""
+    echo "PR created successfully!"
+    echo "Branch: $BRANCH_NAME"
+else
+    echo ""
+    echo "PR creation disabled. Branch: $BRANCH_NAME"
+fi
