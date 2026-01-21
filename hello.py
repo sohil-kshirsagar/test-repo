@@ -1,4 +1,8 @@
-def main():
+ def main():
+    print("Hello, World!")
+    print("Hello, Earth!") 
+    print("Hello, Galaxy!")
+    print("Hello, Mars!")
     print("Hello, World 2!")
     print("Hello, World 3!")
     print("Hello, World 4!")
