@@ -33,6 +33,8 @@ def main():
     print("Hello, World 33!")
     print("Hello, World 34!")
     print("Hello, World 35!")
+    print("Hello, World 37!")
+    print("Hello, World 38!")
     print("Hello, World 36!")
     print("Hello, World 37!")
 
