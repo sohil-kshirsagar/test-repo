@@ -6,3 +6,4 @@ def capitalize_first_letter(string):
     """
     return string[0].upper() + string[1:]
 
+# no-op change for once-per-pr test
